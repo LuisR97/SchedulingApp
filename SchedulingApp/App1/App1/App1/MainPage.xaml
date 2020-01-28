@@ -6,6 +6,11 @@
              mc:Ignorable="d"
              x:Class="App1.MainPage">
 
+
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles.css"/>
+    </ContentPage.Resources>
+
     <StackLayout>
         <!-- Place new controls here -->
         <Label x:Name="Label1"
@@ -24,8 +29,8 @@
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
             Clicked="GenerateQRCodeButton"/>
-        
-        
+
+
     </StackLayout>
 
 </ContentPage>
