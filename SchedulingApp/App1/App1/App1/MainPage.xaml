@@ -11,25 +11,28 @@
         <StyleSheet Source="Styles.css"/>
     </ContentPage.Resources>
 
-    <StackLayout>
+    <StackLayout VerticalOptions="Center">
         <!-- Place new controls here -->
         <Label x:Name="Label1"
-            
-            Text="Yes" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           Text="Quick Meet"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="Center"/>
+
         <Image x:Name ="QRCodeImg">
             <Image.Source>
                 <FileImageSource File="{Binding SomeImage}" />
             </Image.Source>
         </Image>
 
+        <Button
+            Text = "Scan QR"/>
         <Button 
-            Text="Create QR Code" 
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center"
+            Text="Create QR" 
             Clicked="GenerateQRCodeButton"/>
-
+        <Button
+            Text="Manage Schedule"/>
+        <Button
+            Text="Credits"/>
 
     </StackLayout>
 
