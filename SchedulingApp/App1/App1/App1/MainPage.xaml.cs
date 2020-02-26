@@ -8,8 +8,12 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZXing;
+using ZXing.Common;
+using ZXing.Net.Mobile.Forms;
+using ZXing.QrCode;
 
-namespace App1 
+namespace App1
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
@@ -24,7 +28,7 @@ namespace App1
             InitializeComponent();
         }
 
-        private void GenerateQRCode (string dataString)
+        private void GenerateQRCode(string dataString)
         {
             using (var client = new HttpClient())
             {
@@ -41,14 +45,36 @@ namespace App1
 
                     //Console.WriteLine(responseString);
                     //Label1.Text = responseString;
+                    //
 
                 }
             }
         }
 
+        public void ScanQRCode()
+        {
+            var scanPage = new ZXingScannerPage();
+            // Navigate to our scanner page
+            Navigation.PushAsync(scanPage);
+            scanPage.OnScanResult += (result) =>
+            {
+                scanPage.IsScanning = false;
+
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await Navigation.PopAsync();
+                    await DisplayAlert("Scanned Barcode", result.Text, "OK");
+                });
+            };
+        }
+
         public void GenerateQRCodeButton(object sender, System.EventArgs e)
         {
             GenerateQRCode("Chingus' Dingus");
+        }
+        public void ScanQRCodeButton(object sender, System.EventArgs e)
+        {
+            ScanQRCode();
         }
     }
 }
