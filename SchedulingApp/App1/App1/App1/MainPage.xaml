@@ -12,8 +12,7 @@
     </ContentPage.Resources>
 
 
-    <StackLayout VerticalOptions="CenterAndExpand"
-           HorizontalOptions="Center">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
         <!-- Place new controls here -->
         <Label x:Name="Label1"
            Text="Quick Meet"/>
@@ -26,16 +25,20 @@
 
         <Button
             Text = "Scan QR"/>
+
         <Button 
             Text="Create QR" 
             Clicked="GenerateQRCodeButton"/>
+
         <Button
             Text="Manage Schedule"
             Clicked="AorITest"/>
+
         <Button
             Text="Credits"
             Clicked="Button2"/>
-        <Slider/>
+
+            
     </StackLayout>
 
 

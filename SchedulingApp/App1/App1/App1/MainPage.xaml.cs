@@ -12,6 +12,9 @@ using ZXing;
 using ZXing.Common;
 using ZXing.Net.Mobile.Forms;
 using ZXing.QrCode;
+using System.IO;
+
+
 
 namespace App1
 {
@@ -75,11 +78,11 @@ namespace App1
         void Button2(object sender, System.EventArgs e)
         {
             DisplayAlert("Title", "Hahahahahahahaha","OK");
-        }
+        } 
 
         void AorITest(object sender, System.EventArgs e)
         {
-            
+
         }
 
     }

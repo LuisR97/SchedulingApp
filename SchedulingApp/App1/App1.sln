@@ -17,6 +17,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|iPhone = Release|iPhone
 		Release|iPhoneSimulator = Release|iPhoneSimulator
+		myConfig|Any CPU = myConfig|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F2FF096A-47FD-4ADF-8C6E-0742DF4766ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -37,6 +38,8 @@ Global
 		{F2FF096A-47FD-4ADF-8C6E-0742DF4766ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F2FF096A-47FD-4ADF-8C6E-0742DF4766ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{F2FF096A-47FD-4ADF-8C6E-0742DF4766ED}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{F2FF096A-47FD-4ADF-8C6E-0742DF4766ED}.myConfig|Any CPU.ActiveCfg = myConfig|Any CPU
+		{F2FF096A-47FD-4ADF-8C6E-0742DF4766ED}.myConfig|Any CPU.Build.0 = myConfig|Any CPU
 		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
@@ -55,6 +58,8 @@ Global
 		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.myConfig|Any CPU.ActiveCfg = myConfig|Any CPU
+		{C3185769-E22B-4BB2-8EB4-6ADEA9EDD89A}.myConfig|Any CPU.Build.0 = myConfig|Any CPU
 		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -73,11 +78,50 @@ Global
 		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.myConfig|Any CPU.ActiveCfg = myConfig|Any CPU
+		{1D82FC75-1819-466C-BC6C-86B2D0928C25}.myConfig|Any CPU.Build.0 = myConfig|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BAF91A3-CDD2-40E0-9500-106C291A1FD8}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 80
+		$3.TabsToSpaces = True
+		$3.scope = text/plain
+		$0.TextStylePolicy = $4
+		$4.inheritsSet = null
+		$4.scope = application/xml
+		$0.XmlFormattingPolicy = $5
+		$5.scope = application/xml
+		$0.TextStylePolicy = $6
+		$6.inheritsSet = null
+		$6.scope = application/vnd.apple-xcode-storyboard
+		$0.XmlFormattingPolicy = $7
+		$7.inheritsSet = null
+		$7.scope = application/vnd.apple-xcode-storyboard
+		$0.TextStylePolicy = $8
+		$8.inheritsSet = null
+		$8.scope = text/x-web
+		$0.TextStylePolicy = $9
+		$9.inheritsSet = null
+		$9.scope = text/x-vs
+		$0.TextStylePolicy = $10
+		$10.inheritsSet = null
+		$10.scope = application/xaml
+		$0.XmlFormattingPolicy = $11
+		$11.inheritsSet = null
+		$11.scope = application/xaml
+		$0.StandardHeader = $12
+		$0.VersionControlPolicy = $13
 	EndGlobalSection
 EndGlobal
